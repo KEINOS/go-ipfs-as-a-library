@@ -1,0 +1,15 @@
+name: go1_16
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  go1_16:
+    name: Run on Go v1.16
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run on Go 1.16
+        run: docker-compose up v1_16

@@ -4,16 +4,22 @@ This repo is a spin-off of the [official tutorial sample of `go-ipfs` (from Go-I
 
 It aims to be the working example for various Golang version.
 
-- [x] Go 1.14
-- [x] Go 1.15
-- [x] Go 1.16
+- Go 1.14 [![go1_14](https://github.com/KEINOS/go-ipfs-as-a-library/actions/workflows/runGo1_14.yml/badge.svg)](https://github.com/KEINOS/go-ipfs-as-a-library/actions/workflows/runGo1_14.yml)
+- Go 1.15
+[![go1_15](https://github.com/KEINOS/go-ipfs-as-a-library/actions/workflows/runGo1_15.yml/badge.svg)](https://github.com/KEINOS/go-ipfs-as-a-library/actions/workflows/runGo1_15.yml)
+- Go 1.16 [![go1_16](https://github.com/KEINOS/go-ipfs-as-a-library/actions/workflows/runGo1_16.yml/badge.svg)](https://github.com/KEINOS/go-ipfs-as-a-library/actions/workflows/runGo1_16.yml)
 
 ## How To Run
 
 ```shellsession
-$ cd /path/to/cloned/go-ipfs-as-a-library
+$ git clone https://github.com/KEINOS/go-ipfs-as-a-library.git
+...(** snip **)...
+
+$ cd ./go-ipfs-as-a-library
+
 $ go mod download
 ...(** snip **)...
+
 $ go run main.go
 ...(** snip **)...
 All done! You just finalized your first tutorial on how to use go-ipfs as a library

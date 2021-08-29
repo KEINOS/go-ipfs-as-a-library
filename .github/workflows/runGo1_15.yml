@@ -3,6 +3,9 @@ name: go1_15
 on:
   workflow_dispatch:
   push:
+  schedule:
+    # Runs at 19:15 UTC on Sun (JST: AM 04:15 on every Monday)
+    - cron: '15 19 * * SUN'
 
 jobs:
   go1_14:
